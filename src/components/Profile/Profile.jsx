@@ -1,28 +1,33 @@
 import css from "./Profile.module.css";
 
-const Profile = () => {
+const Profile = ({name, tag, location, image, stats}) => {
   return (
-    <div>
-      {" "}
-      <div>
-        {" "}
+    <div className={css.card}>
+      <div className={css.cardHead}>
         <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-          alt="User avatar"
+          className={css.img}
+          src={image}
+          alt={name}
+          width={200}
+          height={200}
         />
-        <p>Petra Marica</p> <p>@pmarica</p> <p>Salvador, Brasil</p>{" "}
-      </div>{" "}
-      <ul>
-        {" "}
-        <li>
-          <span>Followers</span> <span>1000</span>{" "}
-        </li>{" "}
-        <li>
-          <span>Views</span> <span>2000</span>{" "}
-        </li>{" "}
-        <li>
-          <span>Likes</span> <span>3000</span>{" "}
-        </li>{" "}
+        <p className={css.name}>{name}</p>
+        <p>@{tag}</p>
+        <p>{location}</p> 
+      </div>
+      <ul className={css.list}>
+        <li className={css.listItem}>
+          <span>Followers</span>
+          <span className={css.listItemCount}>{stats.followers}</span>   
+        </li>
+        <li className={css.listItem}>
+          <span>Views</span>
+          <span className={css.listItemCount}>{stats.views}</span>   
+        </li>
+        <li className={css.listItem}>
+          <span>Likes</span>
+          <span className={css.listItemCount}>{stats.likes}</span>
+        </li>
       </ul>
     </div>
   );

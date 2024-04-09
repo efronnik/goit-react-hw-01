@@ -1,0 +1,62 @@
+.card {
+  margin: 10px auto 0;
+  max-width: 500px;
+  border: 2px solid #191919;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.cardHead {
+  margin-bottom: 20px;
+}
+
+.cardHead p {
+  margin-bottom: 10px;
+}
+
+.cardHead p:not(:nth-child(2)) {
+  color: #6d6d6d;
+  margin-top: 0;
+}
+
+.img {
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #1d1d1d;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0;
+  border-top: 2px solid #6d6d6d;
+  flex: 1;
+  background-color: #c9c9c9;
+}
+
+.listItem:not(:last-child) {
+  border-right: 2px solid #6d6d6d;
+}
+
+.listItemCount {
+  font-weight: 700;
+}
