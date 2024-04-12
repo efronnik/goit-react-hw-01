@@ -1,0 +1,21 @@
+.card {
+  padding: 10px 5px;
+  width: 100px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.img {
+  width: 100%;
+  margin: 0 auto;
+}
+.name {
+  font-size: 24px;
+}
+.online {
+  color: #0f7003;
+}
+.offline {
+  color: #fb0003;
+}
